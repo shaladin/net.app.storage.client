@@ -1,0 +1,13 @@
+{
+  "menuName": "AdvancePaymentAllocApv",
+  "templateId": "",
+  "templateName": "",
+  "menuFolder": "finops",
+  "menuFolderBefore": "finops",
+  "pages": [
+    "AdvancePaymentAllocApproval",
+    "AdvancePaymentAllocApprovalDetail",
+    "AdvancePaymentAllocApproval_Multi",
+    "AdvancePaymentAllocApprovalDetail_Multi"
+  ]
+}
