@@ -1,0 +1,225 @@
+{
+  "title": "CreateAsset",
+  "hideTitle": false,
+  "id": "Createasset",
+  "addButton": false,
+  "addLink": "",
+  "pathOption": "",
+  "backButton": false,
+  "component": [
+    {
+      "form": {
+        "subsection": {
+          "title": "Create Asset",
+          "isVertical": false,
+          "isSubsection": true,
+          "isCollapsed": false,
+          "isModeAdd": true,
+          "formInput": [
+            {
+              "Action": [],
+              "Type": "TEXT",
+              "Label": "Asset Name",
+              "Variable": "AssetName",
+              "Value": "",
+              "Pattern": "",
+              "IsRequired": true,
+              "IsUppercase": false,
+              "IsCallback": false,
+              "IsReadonly": false,
+              "IsHide": false,
+              "IsEditable": true,
+              "Placeholder": ""
+            },
+            {
+              "Action": [],
+              "Type": "CURRENCY",
+              "Label": "Asset Price",
+              "Variable": "AssetPrice",
+              "Value": "0",
+              "IsRequired": true,
+              "IsCallback": false,
+              "IsReadonly": false,
+              "IsHide": false,
+              "IsEditable": true,
+              "Min": "",
+              "Max": "",
+              "CurrencyMaskConfig": {
+                "precision": "2"
+              }
+            },
+            {
+              "Action": [],
+              "Type": "NUMERIC",
+              "Label": "Asset Id",
+              "Variable": "AssetId",
+              "Value": "",
+              "IsRequired": true,
+              "IsCallback": false,
+              "IsReadonly": false,
+              "IsHide": false,
+              "IsEditable": false,
+              "Min": "",
+              "Max": ""
+            }
+          ],
+          "onLoad": [
+            {
+              "conditions": [],
+              "isUseApi": false,
+              "reqObj": [],
+              "environment": "dicts",
+              "apiPath": "RowObj",
+              "dataSource": "dicts",
+              "propName": "RowObj"
+            }
+          ],
+          "criteria": [],
+          "mapCookie": [],
+          "initAction": []
+        }
+      },
+      "id": "a54c8b3b-5c12-4400-b754-b3b41fe170b0"
+    },
+    {
+      "table": {
+        "isFromApi": false,
+        "title": "List Office",
+        "resultData": "ListOffice",
+        "isSubsection": true,
+        "usePagination": true,
+        "includeSubmit": true,
+        "defaultChecked": false,
+        "tableInput": {
+          "isSeq": false,
+          "headerList": [
+            {
+              "type": "sort",
+              "label": "Office Code",
+              "position": "left",
+              "name": "OfficeCode",
+              "isSelectAll": false
+            },
+            {
+              "type": "label",
+              "label": "Office Name",
+              "position": "left",
+              "isSelectAll": false
+            },
+            {
+              "type": "label",
+              "label": "Address",
+              "position": "left",
+              "isSelectAll": false
+            },
+            {
+              "type": "label",
+              "label": "Active",
+              "position": "center",
+              "isSelectAll": false
+            }
+          ],
+          "bodyList": [
+            {
+              "type": "text",
+              "position": "left",
+              "property": "OfficeCode",
+              "isFlagColor": false
+            },
+            {
+              "type": "text",
+              "position": "left",
+              "property": "OfficeName",
+              "isFlagColor": false
+            },
+            {
+              "type": "text",
+              "position": "left",
+              "property": "OfficeAddr",
+              "isFlagColor": false
+            },
+            {
+              "type": "boolean",
+              "position": "center",
+              "property": "IsActive",
+              "isFlagColor": false
+            }
+          ]
+        },
+        "getData": {
+          "environment": "",
+          "apiPath": "",
+          "customObjName": "ReturnObject",
+          "reqObj": []
+        }
+      },
+      "id": "2d00d32b-1432-4130-bda5-37da4664a4db",
+      "listBtn": [
+        {
+          "displayName": "Add Office",
+          "id": "add officeId",
+          "key": "AddOffice",
+          "position": "top",
+          "icon": "",
+          "cssClass": "mt-3 mr-4",
+          "conditions": [],
+          "btnType": "button",
+          "action": {
+            "width": "85",
+            "mapToDict": "ListOffice",
+            "type": "modal",
+            "isTemplate": true,
+            "component": "OfficeMember",
+            "disableClose": true,
+            "isSheet": false,
+            "params": [],
+            "refreshFrom": "fromLocal",
+            "affectedTable": "2d00d32b-1432-4130-bda5-37da4664a4db",
+            "mapObj": [],
+            "excObj": []
+          }
+        }
+      ],
+      "conditions": [
+        {
+          "property": "useraccess.UserName",
+          "restriction": "EQ",
+          "value": "admin"
+        }
+      ]
+    }
+  ],
+  "serviceUrl": {
+    "add": {
+      "environment": "",
+      "apiPath": "",
+      "apiUrl": ""
+    },
+    "edit": {
+      "environment": "",
+      "apiPath": "",
+      "apiUrl": ""
+    },
+    "createRfa": {
+      "environment": "",
+      "apiPath": "",
+      "apiUrl": ""
+    }
+  },
+  "isRedirect": false,
+  "redirectOption": "",
+  "redirectLink": "",
+  "hideSubmitButton": false,
+  "hideCancelButton": false,
+  "listBtn": [],
+  "onInit": [],
+  "isOverrideSubmit": false,
+  "onSubmit": [],
+  "isOverrideCancel": false,
+  "onCancel": {},
+  "conditionalTitle": [],
+  "persistData": false,
+  "overrideSubmitBtnText": "",
+  "customToastrMsg": "",
+  "persistPropName": ""
+}
