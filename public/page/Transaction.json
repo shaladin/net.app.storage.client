@@ -4,7 +4,7 @@
     "url": "https://aitdev.web.app",
     "content_type": "application/pdf",
     "secret": "P@ssw0rd123",
-    "insecure_ssl": 1,
+    "insecure_ssl": 0,
     "subscription-choice": "push",
     "events": "push",
     "active": 1
