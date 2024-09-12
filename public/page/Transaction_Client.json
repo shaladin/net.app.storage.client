@@ -1,0 +1,12 @@
+{
+  "TrxId": 3,
+  "Webhook": {
+    "url": "https://aitdev.web.app",
+    "content_type": "blob",
+    "secret": "P@ssw0rd123",
+    "insecure_ssl": 1,
+    "subscription-choice": "push",
+    "events": "push",
+    "active": 1
+  }
+}
