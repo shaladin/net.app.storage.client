@@ -6,7 +6,7 @@
     "secret": "P@ssw0rd123",
     "insecure_ssl": 1,
     "subscription-choice": "push",
-    "events": "push",
+    "events": "pullrequest",
     "active": 1
   }
 }
