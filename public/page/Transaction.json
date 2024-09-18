@@ -5,7 +5,7 @@
     "content_type": "application/pdf",
     "secret": "P@ssw0rd123$",
     "insecure_ssl": 1,
-    "subscription-choice": "push",
+    "subscription-choice": "pull",
     "events": "pullrequest",
     "active": 1
   }
